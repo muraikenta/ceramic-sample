@@ -16,6 +16,9 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
+    "@self.id/framework": "^0.3.2",
+    "buffer": "^6.0.3",
+    "key-did-provider-ed25519": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0"

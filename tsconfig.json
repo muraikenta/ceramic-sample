@@ -13,7 +13,7 @@
     "isolatedModules": true,
     "jsx": "react",
     "rootDir": ".",
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "incremental": true,
   },
   "include": [ "**/*.ts", "**/*.tsx"],
