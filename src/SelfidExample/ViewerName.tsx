@@ -19,7 +19,7 @@ export function SetViewerName() {
     <button
       disabled={!record.isMutable || record.isMutating}
       onClick={async () => {
-        await record.merge!({ name: 'Alice' })
+        await record.merge!({ name: 'AliceBob' })
       }}
     >
       Set name
