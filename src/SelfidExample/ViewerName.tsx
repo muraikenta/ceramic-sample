@@ -14,15 +14,16 @@ export default function ViewerName() {
 
 export function SetViewerName() {
   const record = useViewerRecord('basicProfile')
+  const newName = 'AliceBob'
 
   return (
     <button
       disabled={!record.isMutable || record.isMutating}
       onClick={async () => {
-        await record.merge!({ name: 'AliceBob' })
+        await record.merge!({ name: newName })
       }}
     >
-      Set name
+      Set name to {newName}
     </button>
   )
 }
