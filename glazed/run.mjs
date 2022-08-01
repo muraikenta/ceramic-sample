@@ -10,7 +10,7 @@ import { fromString } from 'uint8arrays'
 import modelAliases from './model.json' assert { type: 'json' }
 
 // The key must be provided as an environment variable
-const key = fromString(process.env.DID_KEY, 'base16')
+const key = fromString(process.env.SEED, 'base16')
 // Create and authenticate the DID
 const did = new DID({
   provider: new Ed25519Provider(key),
