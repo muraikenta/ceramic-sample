@@ -2,6 +2,7 @@ import React from 'react'
 import { Provider } from '@self.id/framework'
 import SelfidExample from './SelfidExample'
 import { ThreeIdExample } from './ThreeIdExample'
+import { DidSessionExample } from './DidSessionExample'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <hr />
       <ThreeIdExample></ThreeIdExample>
       <hr />
+      <DidSessionExample></DidSessionExample>
     </Provider>
   )
 }
