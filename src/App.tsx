@@ -3,6 +3,7 @@ import { Provider } from '@self.id/framework'
 import SelfidExample from './SelfidExample'
 import { ThreeIdExample } from './ThreeIdExample'
 import { DidSessionExample } from './DidSessionExample'
+import { OrbisSdkExample } from './OrbisSdk'
 
 const App = () => {
   return (
@@ -12,6 +13,8 @@ const App = () => {
       <ThreeIdExample></ThreeIdExample>
       <hr />
       <DidSessionExample></DidSessionExample>
+      <hr />
+      <OrbisSdkExample></OrbisSdkExample>
     </Provider>
   )
 }

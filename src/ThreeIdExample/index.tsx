@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { CeramicClient } from '@ceramicnetwork/http-client'
 import { DID } from 'dids'
 import { getResolver as getKeyResolver } from 'key-did-resolver'
@@ -52,6 +52,14 @@ async function tryAuthenticate() {
 
 export const ThreeIdExample = () => {
   const [did, setDid] = useState<string>()
+
+  useEffect(() => {
+    // console.log('@@@@@@@@@@@@')
+    // threeID.connect(undefined)
+    // const provider = threeID.getDidProvider()
+    // const did = new DID({ provider })
+    // console.log(did.id, did.parent)
+  }, [])
   return (
     <div>
       <h2>3ID Example</h2>

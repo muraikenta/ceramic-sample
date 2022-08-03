@@ -15,7 +15,7 @@ const checkSession = async () => {
   // Use DIDs in ceramic, composedb & glaze libraries, ie
   ceramic.did = session.did
 
-  return ceramic.did.id
+  return session.id
 }
 
 const auth = async () => {
@@ -29,6 +29,7 @@ const auth = async () => {
       'kjzl6cwe1jw1490htuecdx3bto3sizyygppk3o1d19gz5evphr8r9fe411p5e0q',
     ],
   })
+  console.log(session.id)
 
   // save to storage
   const sessionString = session.serialize()
@@ -37,7 +38,7 @@ const auth = async () => {
   // Use DIDs in ceramic, composedb & glaze libraries, ie
   ceramic.did = session.did
 
-  return ceramic.did.id
+  return session.did.parent
 }
 
 export const DidSessionExample = () => {
